@@ -14,7 +14,7 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-10">
-        Hello! My name is Nrusinghamath Sahu, and I come from Koraput, Odisha. 
+        Hello! My name is Nrusinghanath Sahu, and I come from Koraput, Odisha. 
         I have recently completed my Bachelor's degree in Education from Acharya 
         Nagarjuna University in 2022. Prior to that, I graduated with Botany Honours 
         from Utkal University in 2020. I received my Higher Secondary education from 
