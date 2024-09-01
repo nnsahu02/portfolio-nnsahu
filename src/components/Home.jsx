@@ -9,18 +9,18 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row pt-16 md:pt-0">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             I'm a MERN Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-          I am a highly motivated and skilled software developer with hands-on experience in software development, 
-          I have a strong focus on backend technologies. I have successfully led projects, designed architecture, 
-          and spearheaded a team to deliver robust backend solutions. My expertise includes JavaScript, Node.js, 
-          Express.js, MongoDB, PostgreSQL, Redis, Electron.js, JWT, Git, GitHub, Bitbucket, Digital Ocean, PM2, and 
-          Putty, with additional skills in basic React, AWS, Jenkins, Docker, and Kubernetes. I am passionate about 
-          optimizing performance and creating scalable, efficient backend systems.
+            I am a highly motivated and skilled software developer with hands-on experience in software development, 
+            I have a strong focus on backend technologies. I have successfully led projects, designed architecture, 
+            and spearheaded a team to deliver robust backend solutions. My expertise includes JavaScript, Node.js, 
+            Express.js, MongoDB, PostgreSQL, Redis, Electron.js, JWT, Git, GitHub, Bitbucket, Digital Ocean, PM2, and 
+            Putty, with additional skills in basic React, AWS, Jenkins, Docker, and Kubernetes. I am passionate about 
+            optimizing performance and creating scalable, efficient backend systems.
           </p>
 
           <div>
@@ -49,5 +49,6 @@ const Home = () => {
     </div>
   );
 };
+
 
 export default Home;
