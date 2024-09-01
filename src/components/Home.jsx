@@ -15,12 +15,12 @@ const Home = () => {
             I'm a MERN Stack Developer
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-          I am a highly motivated and skilled software developer 
-          with experience in JavaScript, Node.js, Express, React, 
-          MongoDB, Redis, and AWS S3. I have been enrolled with an 
-          intensive backend development bootcamp (FunctionUp) since 
-          19th september 2022 as a backend developer trainee. 
-          I am eager to apply my skills and knowledge in a professional setting.
+          I am a highly motivated and skilled software developer with hands-on experience in software development, 
+          I have a strong focus on backend technologies. I have successfully led projects, designed architecture, 
+          and spearheaded a team to deliver robust backend solutions. My expertise includes JavaScript, Node.js, 
+          Express.js, MongoDB, PostgreSQL, Redis, Electron.js, JWT, Git, GitHub, Bitbucket, Digital Ocean, PM2, and 
+          Putty, with additional skills in basic React, AWS, Jenkins, Docker, and Kubernetes. I am passionate about 
+          optimizing performance and creating scalable, efficient backend systems.
           </p>
 
           <div>
@@ -30,7 +30,7 @@ const Home = () => {
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
-              Portfolio
+              Projects
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
