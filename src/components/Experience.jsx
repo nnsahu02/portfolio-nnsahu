@@ -1,7 +1,5 @@
 import React from "react";
 
-import html from "../assets/html.png";
-import css from "../assets/css.png";
 import javascript from "../assets/javascript.png";
 import reactImage from "../assets/react.png";
 import node from "../assets/node.png";
@@ -102,6 +100,12 @@ const Experience = () => {
       style: "shadow-orange-400",
     },
     {
+      id: 13,
+      src: docker,
+      title: "Docker",
+      style: "shadow-purple-400",
+    },
+    {
       id: 9,
       src: jenkins,
       title: "Jenkins",
@@ -114,7 +118,13 @@ const Experience = () => {
       style: "shadow-purple-400",
     },
     {
-      id: 20,
+      id: 21,
+      src: digitalocean,
+      title: "Digital Ocean",
+      style: "shadow-pink-400",
+    },
+    {
+      id: 22,
       src: putty,
       title: "Putty",
       style: "shadow-blue-400",
