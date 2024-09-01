@@ -11,37 +11,45 @@ const Portfolio = () => {
     {
       id: 1,
       src: blog,
-      githubLink : "https://github.com/nnsahu02/Blogging-Site-Mini-Project"
+      githubLink: "https://github.com/nnsahu02/Blogging-Site-Mini-Project"
     },
     {
       id: 2,
       src: booklab,
-      githubLink : "https://github.com/nnsahu02/project-booksManagementGroup42"
+      githubLink: "https://github.com/nnsahu02/project-booksManagementGroup42"
     },
     {
       id: 3,
       src: cart,
-      githubLink : "https://github.com/nnsahu02/Shopping_Cart"
+      githubLink: "https://github.com/nnsahu02/Shopping_Cart"
     },
     {
       id: 4,
       src: astropic,
-      githubLink : "https://github.com/nnsahu02/Astronomy-Picture-of-the-Day"
+      githubLink: "https://github.com/nnsahu02/Astronomy-Picture-of-the-Day",
+      siteLink: "https://astropic.netlify.app"
     },
     {
       id: 5,
       src: odisha,
-      githubLink : "https://github.com/nnsahu02/Explore-Odisha-website"
+      githubLink: "https://github.com/nnsahu02/Explore-Odisha-website"
     },
     {
       id: 6,
       src: link,
-      githubLink : "https://github.com/nnsahu02/project-urlShortnerGroup19"
+      githubLink: "https://github.com/nnsahu02/project-urlShortnerGroup19"
     },
   ];
 
   const handleCodeButtonClick = (githubLink) => {
     window.open(githubLink, "_blank");
+  };
+  const handleDemoButtonClick = (link) => {
+    if (link) {
+      window.open(link, "_blank");
+    } else {
+      alert("No demo site is available for this project yet. Currently, only the Astropic site is available.")
+    }
   };
 
   return (
@@ -58,7 +66,7 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, githubLink }) => (
+          {portfolios.map(({ id, src, githubLink, siteLink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -66,11 +74,13 @@ const Portfolio = () => {
                 className="rounded-md duration-200 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+                <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  onClick={() => handleDemoButtonClick(siteLink)}
+                >
                   Demo
                 </button>
                 <button className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
-                onClick={() => handleCodeButtonClick(githubLink)}
+                  onClick={() => handleCodeButtonClick(githubLink)}
                 >
                   Code
                 </button>
